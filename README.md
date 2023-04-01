@@ -1,4 +1,4 @@
 # IISc-experiments
 
-Some material for lectures at IISc, April 2023.
+Some material for Lean 4 lectures at IISc, April 2023.
 
