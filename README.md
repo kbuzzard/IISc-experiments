@@ -28,6 +28,8 @@ You don't need to install anything onto your computer using this method.
 
 Just click here: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/kbuzzard/IISc-experiments)
 
+Note to self: I got gitpod working by adding the files `.gitpod.yml` and `.docker/gitpod/Dockerfile`
+
 ### Remote running via Codespaces
 
 You don't need to install anything onto your computer using this method.
@@ -39,3 +41,4 @@ Pic: ![codespaces installation](png/codespaces.png?raw=true "codespaces installa
 
 Then click "create codespace on main", and then wait for a few minutes. When it looks like everything has downloaded, open up the `IIScExperiments` directory (not the file!) and the code I've been using in the lectures should just work.
 
+Note to self: I got codespaces working by adding the file `.devcontainer/devcontainer.json`
