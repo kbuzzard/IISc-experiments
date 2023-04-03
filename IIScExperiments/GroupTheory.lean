@@ -1,3 +1,8 @@
+/-
+Copyright (c) 2023 Kevin Buzzard. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kevin Buzzard
+-/
 import Mathlib.Algebra.Group.Defs
 
 /-- `MyGroup G` is the type of group structures on `G`, with

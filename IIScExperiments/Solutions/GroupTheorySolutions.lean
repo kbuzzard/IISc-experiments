@@ -1,3 +1,8 @@
+/-
+Copyright (c) 2023 Kevin Buzzard. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kevin Buzzard
+-/
 import Mathlib.Algebra.Group.Defs
 
 class MyGroup (G : Type) extends One G, Mul G, Inv G : Type :=
