@@ -1,4 +1,4 @@
-import Mathlib
+import Mathlib.Algebra.Group.Defs
 
 /-- `MyGroup G` is the type of group structures on `G`, with
 group law equal to multiplication. To use, write `[MyGroup G]`

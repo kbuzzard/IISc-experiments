@@ -1,4 +1,4 @@
-import Mathlib.GroupTheory.FreeGroup
+import Mathlib.Algebra.Group.Defs
 
 class MyGroup (G : Type) extends One G, Mul G, Inv G : Type :=
 (mul_assoc : ∀ a b c : G, (a * b) * c = a * (b * c))
