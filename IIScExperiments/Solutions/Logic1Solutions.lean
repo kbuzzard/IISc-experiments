@@ -30,10 +30,7 @@ following three tactics:
 * `exact`
 * `apply`
 
-You can read the descriptions of these tactics in Part C of the online course
-notes here https://www.ma.imperial.ac.uk/~buzzard/xena/formalising-mathematics-2023/Part_C/tactics/tactics.html
-In this course we'll be learning about 30 tactics in total; the goal of this
-first logic section is to get you up to speed with ten very basic ones.
+We'll be learning about 10 tactics in total to do logic.
 
 ## Worked examples
 
