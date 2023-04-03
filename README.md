@@ -41,4 +41,4 @@ Pic: ![codespaces installation](png/codespaces.png?raw=true "codespaces installa
 
 Then click "create codespace on main", and then wait for a few minutes. When it looks like everything has downloaded, open up the `IIScExperiments` directory (not the file!) and the code I've been using in the lectures should just work.
 
-Note to self: I got codespaces working by adding the file `.devcontainer/devcontainer.json`
+Note to self: I got codespaces working by adding the files `.devcontainer/devcontainer.json` and `.devcontainer/Dockerfile`.
