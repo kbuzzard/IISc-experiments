@@ -4,9 +4,9 @@ Some material for Lean 4 lectures at IISc.
 
 Written in Bengaluru, April 2023.
 
-# How to run this repo on your own computer?
+## How to run this repo yourself?
 
-## Local installation
+### Local installation
 
 This is the best way; you can edit files and experiment, and you won't lose them.
 It's also the hardest way: it involves typing stuff in on the command line. 
@@ -22,13 +22,13 @@ Next open a command line in the project folder, type `lake exe cache get`, and w
 
 Finally, open the root directory of the project folder in VS Code. You can open the files in the `IIScExperiments` directory and these correspond to the material I was going through in lectures.
 
-## Remote running via GitPod
+### Remote running via GitPod
 
 You don't need to install anything onto your computer using this method.
 
 Just click here: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/kbuzzard/IISc-experiments)
 
-## Remote running via Codespaces
+### Remote running via Codespaces
 
 Go to the project's [home page on GitHub](https://github.com/kbuzzard/IISc-experiments),
 click "Code" and then "Codespaces" so it looks like this:
