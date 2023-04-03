@@ -1,4 +1,4 @@
-/-false
+/-
 Copyright (c) 2023 Kevin Buzzard. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Author : Kevin Buzzard
@@ -16,6 +16,7 @@ We learn about how to manipulate `¬ P` in Lean.
 
 In Lean, `¬ P` is *defined* to mean `P → False`. So `¬ P` and `P → False`
 are *definitionally equal*. 
+
 ## Tactics
 
 You'll need to know about the tactics from the previous sheets,
