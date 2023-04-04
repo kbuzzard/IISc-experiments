@@ -1,1 +1,1 @@
-import IIScExperiments.GroupTheorySolutions
+import IIScExperiments.GroupTheory
