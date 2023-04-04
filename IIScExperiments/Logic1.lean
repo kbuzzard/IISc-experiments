@@ -3,7 +3,6 @@ Copyright (c) 2023 Kevin Buzzard. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Author : Kevin Buzzard
 -/
-import Mathlib.Tactic.Tauto -- cheat mode
 set_option linter.unusedVariables false
 /-!
 
@@ -82,8 +81,7 @@ using `intro`, `exact` and `apply`.
 
 /-- Every proposition implies itself. -/
 example : P → P := by
-  intro banana
-  exact banana
+  sorry
 
 /-
 
@@ -101,35 +99,22 @@ So the next level is asking you prove that `P → (Q → P)`.
 
 -/
 example : P → Q → P := by
-  intro hP
-  intro hQ
-  -- the `assumption` tactic will close a goal if
-  -- it's exactly equal to one of the hypotheses.
-  assumption
+  sorry
 
 /-- If we know `P`, and we also know `P → Q`, we can deduce `Q`. 
 This is called "Modus Ponens" by logicians. -/
 example : P → (P → Q) → Q := by
-  intros hP hPQ
-  apply hPQ
-  exact hP
+  sorry
 
 /-- `→` is transitive. That is, if `P → Q` and `Q → R` are true, then
   so is `P → R`. -/
 example : (P → Q) → (Q → R) → (P → R) := by
-  intros hPQ hQR hP
-  apply hQR
-  apply hPQ
-  exact hP
+  sorry
 
 -- If `h : P → Q → R` with goal `⊢ R` and you `apply h`, you'll get
 -- two goals! Note that tactics operate on only the first goal.
 example : (P → Q → R) → (P → Q) → (P → R) := by
-  intros hPQR hPQ hP
-  apply hPQR
-  { exact hP }
-  { apply hPQ
-    exact hP }
+  sorry
 
 /- 
 
@@ -144,54 +129,23 @@ in this section, where you'll learn some more tactics.
 variable (S T : Prop)
 
 example : (P → R) → (S → Q) → (R → T) → (Q → R) → S → T := by
-  intros hPR hSQ hRT hQR hS
-  apply hRT
-  clear hPR
-  apply hQR
-  apply hSQ
-  exact hS
+  sorry
 
 example : (P → Q) → ((P → Q) → P) → Q := by
-  intros hPQ hPQP
-  apply hPQ
-  apply hPQP
-  exact hPQ
+  sorry
 
 example : ((P → Q) → R) → ((Q → R) → P) → ((R → P) → Q) → P := by
-  intros h1 h2 h3
-  apply h2
-  intro hQ
-  apply h1
-  intro hP
-  exact hQ
+  sorry
 
 example : ((Q → P) → P) → (Q → R) → (R → P) → P := by
-  intros h1 h2 h3
-  apply h1
-  intro hQ
-  apply h3
-  apply h2
-  exact hQ
+  sorry
 
 example : (((P → Q) → Q) → Q) → (P → Q) := by
-  intros h1 hP
-  apply h1
-  intro hPQ
-  exact hPQ hP
+  sorry
 
 example :
-  (((P → Q → Q) → ((P → Q) → Q)) → R) →
-  ((((P → P) → Q) → (P → P → Q)) → R) →
-  (((P → P → Q) → ((P → P) → Q)) → R) → R := by
-  intros h1 h2 h3
-  apply h2
-  intros h1 hP h2
-  apply h1
-  intro hP
-  exact h2
+    (((P → Q → Q) → ((P → Q) → Q)) → R) →
+    ((((P → P) → Q) → (P → P → Q)) → R) →
+    (((P → P → Q) → ((P → P) → Q)) → R) → R := by
+  sorry
 
-example :
-  (((P → Q → Q) → ((P → Q) → Q)) → R) →
-  ((((P → P) → Q) → (P → P → Q)) → R) →
-  (((P → P → Q) → ((P → P) → Q)) → R) → R := by
-  tauto
