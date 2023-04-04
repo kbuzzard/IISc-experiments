@@ -15,7 +15,7 @@ See the [RESOURCES](RESOURCES.md) file.
 This is the best way; you can edit files and experiment, and you won't lose them.
 It's also the hardest way: it involves typing stuff in on the command line. 
 
-In brief: first install Lean following the instructions [here](https://leanprover.github.io/lean4/doc/quickstart.html).
+In brief: first install Lean 4 following the instructions [here](https://leanprover.github.io/lean4/doc/quickstart.html).
 
 Then download and install this project by going to its [home page on GitHub](https://github.com/kbuzzard/IISc-experiments),
 clicking "Code" and "local", and then downloading the project onto your computer.
