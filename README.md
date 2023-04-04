@@ -4,6 +4,10 @@ Some material for Lean 4 lectures at IISc.
 
 Written in Bengaluru, April 2023.
 
+## Learning resources (how do I learn?)
+
+See the [RESOURCES](RESOURCES.md) file.
+
 ## How to run this repo yourself?
 
 ### Local installation
